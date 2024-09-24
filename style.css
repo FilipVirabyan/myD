@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -216,4 +217,22 @@ html, body {
 
 #page-audio {
     opacity: 0;
+}
+
+.click-me {
+    font-size: 60px;
+    font-weight: 800;
+    position: absolute;
+    z-index: 1000000000000;
+    font-family: 'Arial', sans-serif;
+    color: #efb2ff;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.3;
+    transform: translate(-50%, -50%);
+    top: 50%; /* Move to the center vertically */
+    left: 50%;
+    animation: fadeIn 2s forwards;
+    transition: opacity 1s ease-in-out;
 }

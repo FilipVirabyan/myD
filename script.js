@@ -29,4 +29,16 @@ document.addEventListener('DOMContentLoaded', function () {
         item.style.left = `${randomLeft}%`;
         item.style.marginTop = `${randomTop}px`;
     });
+
+    const clickMe = document.getElementById('click-me');
+
+    clickMe.addEventListener('click', function () {
+        // Add fade-out class to start fading out animation
+        clickMe.classList.add('fade-out');
+
+        // Remove the element after the fade-out animation is done
+        setTimeout(() => {
+            clickMe.style.display = 'none';
+        }, 1000); // Wait for 1 second for the animation to complete
+    });
 });// Change image every 3 seconds
