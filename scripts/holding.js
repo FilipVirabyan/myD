@@ -25,7 +25,7 @@ function handleTouchEvent(event) {
     console.log(event);
     // Prevent default behavior (e.g., scrolling) for better touch handling
     event.preventDefault();
-    alert('hello')
+
 
     // Get all active touch points
     const touches = event.touches;
@@ -44,6 +44,7 @@ function handleTouchEvent(event) {
 
         // Stop collecting if we already have 4 touch points
         if (leftSideTouches.length === 4) {
+            alert('hello')
             break;
         }
     }
