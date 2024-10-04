@@ -14,7 +14,9 @@ console.log('rfrf')
 //
 // // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
-
+if (navigator.vibrate) {
+    navigator.vibrate(2000); // Vibrate for 500 milliseconds
+}
 function isTouchOnLeftSide(touch) {
     const screenWidth = window.innerWidth;
     return touch.clientX < screenWidth / 2; // Only consider touches on the left side
