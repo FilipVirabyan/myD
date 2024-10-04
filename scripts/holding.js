@@ -1,19 +1,19 @@
 console.log('rfrf')
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from 'firebase/firestore';
-const firebaseConfig = {
-    apiKey: "AIzaSyCAB9saDPEPO9IjCgDA-P_2DCaCwpAjMYg",
-    authDomain: "my-d-9d702.firebaseapp.com",
-    projectId: "my-d-9d702",
-    storageBucket: "my-d-9d702.appspot.com",
-    messagingSenderId: "473157913654",
-    appId: "1:473157913654:web:ed4500e3d43783cc501c97",
-    measurementId: "G-CSXLD74DT6"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// import { getFirestore } from 'firebase/firestore';
+// const firebaseConfig = {
+//     apiKey: "AIzaSyCAB9saDPEPO9IjCgDA-P_2DCaCwpAjMYg",
+//     authDomain: "my-d-9d702.firebaseapp.com",
+//     projectId: "my-d-9d702",
+//     storageBucket: "my-d-9d702.appspot.com",
+//     messagingSenderId: "473157913654",
+//     appId: "1:473157913654:web:ed4500e3d43783cc501c97",
+//     measurementId: "G-CSXLD74DT6"
+// };
+//
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
 
 function isTouchOnLeftSide(touch) {
     const screenWidth = window.innerWidth;
