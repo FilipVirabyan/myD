@@ -22,10 +22,8 @@ function isTouchOnLeftSide(touch) {
 
 // Function to handle touch events
 function handleTouchEvent(event) {
-    console.log(event);
     // Prevent default behavior (e.g., scrolling) for better touch handling
     event.preventDefault();
-
 
     // Get all active touch points
     const touches = event.touches;
@@ -44,18 +42,20 @@ function handleTouchEvent(event) {
 
         // Stop collecting if we already have 4 touch points
         if (leftSideTouches.length === 4) {
-            alert('hello')
             break;
         }
     }
 
-    // Log or handle the 4 touch points on the left side
+    // Log the left side touches
     console.log('Left side touches:', leftSideTouches);
 
-    // If we have 4 touches on the left side, do something (e.g., trigger an action)
+    // If we have 4 touches on the left side, trigger vibration
     if (leftSideTouches.length === 4) {
         console.log("Four touches detected on the left side of the screen.");
-        // You can add additional logic here for what happens when four touches are detected
+        // Trigger vibration
+        if (navigator.vibrate) {
+            navigator.vibrate(500); // Vibrate for 500 milliseconds
+        }
     }
 }
 
