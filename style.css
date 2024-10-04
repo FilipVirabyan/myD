@@ -6,6 +6,10 @@ html, body {
     overflow: hidden;
 }
 
+#holding {
+    display: none;
+}
+
 .wrapper {
     width: 100%;
     background: transparent;
