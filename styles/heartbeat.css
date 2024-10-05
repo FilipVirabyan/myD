@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+#countdown{
+    background: black;
+}
+#countdown img {
+    display: none;
+}
+
+
+.dribbble {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+}
+.dribbble img {
+    display: block;
+    height: 28px;
+}
+.twitter {
+    position: fixed;
+    display: block;
+    right: 64px;
+    bottom: 14px;
+}
+.twitter svg {
+    width: 32px;
+    height: 32px;
+    fill: #1da1f2;
+}
+
+
+.count-up-container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.count-up {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #FF69B4; /* Romantic pink color */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.romantic-note {
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #FF69B4; /* Deeper romantic pink */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
